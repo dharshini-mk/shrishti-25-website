@@ -1,13 +1,31 @@
-/* General Reset */
 body {
   margin: 0;
-  background-color: #1d1d1f;
-  color: #fff;
+  color: black;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
+  position: relative;
+}
 
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('bg.jpg');
+  background-size: contain;
+  background-position: left top; /* Starting position */
+  opacity: 0.4; /* Adjust opacity here */
+  z-index: -1;
+  animation: body 300s linear infinite;
+}
+
+@keyframes body {
+  from { background-position: left top; }
+  to { background-position: right bottom; }
 }
 
 
@@ -40,7 +58,8 @@ body {
   font-size: 1.1rem;
   margin: 30px 0;
   line-height: 1.5;
-  color: #ccc;
+  color: #595959;
+  font-weight: 550;
 }
 
 .buttons {
@@ -59,12 +78,12 @@ button {
 
 button.primary {
   background-color: #925bff;
-  color: #fff;
+  color: #ffffff;
 }
 
 button.secondary {
   background-color: transparent;
-  color: #fff;
+  color: #3e3e3e;
   border: 1px solid #925bff;
 }
 
@@ -121,9 +140,10 @@ button:hover {
 
 .feature-content p {
   font-size: 1.2rem;
-  color: #ccc;
+  color: #4b4b4b;
   line-height: 1.5;
   margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .feature-content button {
@@ -238,11 +258,10 @@ body {
 }
 
 .hero-section {
-  margin-top: 40px;
   flex-direction: column;
   text-align: center;
   height: auto;
-  padding: 20px 5%;
+  padding: 50px 5%;
 }
 
 .content {
@@ -265,22 +284,22 @@ body {
 
 .artwork img {
   padding-top: 40px;
-  max-width: 50%; /* Ensure images scale within the screen */
+  max-width: 55%; /* Ensure images scale within the screen */
   border-radius: 10px;
 }
 
 .features-section {
   padding: 15px;
+  margin-top: 20px;
 }
 
 .feature {
   flex-direction: row;
-  text-align:justify;
-  gap: 7px;
+  gap: 20px;
 }
 
 .feature img {
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .feature-content h2 {
@@ -289,6 +308,7 @@ body {
 
 .feature-content p {
   font-size: 0.6rem;
+  text-align: justify;
 }
 
 .timer-section {
