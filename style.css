@@ -222,7 +222,7 @@ color: #333; /* Dark text color */
 }
 
 /* General Mobile Styles for 320px */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 412px) {
 body {
   font-size: 14px; /* Adjust font size for better readability */
   padding: 0;
