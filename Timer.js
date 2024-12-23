@@ -1,5 +1,5 @@
 // Countdown Timer Logic
-const eventDate = new Date("2025-03-01T00:00:00").getTime(); // Set your event date
+const eventDate = new Date("2025-01-25T00:00:00").getTime(); // Set your event date
 
 function updateTimer() {
   const now = new Date().getTime();
