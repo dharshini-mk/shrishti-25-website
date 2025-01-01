@@ -241,6 +241,20 @@ font-size: 14px;
 color: #ffffff; /* Dark text color */
 }
 
+.contact{
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+
+.gayu, .jaya, .ishu, .sorna{
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 100px;
+}
+
 /* General Mobile Styles for 320px */
 @media only screen and (max-width: 412px),
        only screen and (max-width: 320px),
@@ -322,6 +336,19 @@ body {
 
 .time-box span {
   font-size: 1.5rem; /* Smaller time font size */
+}
+
+.contact{
+  flex-direction: row;
+  
+}
+
+.gayu, .jaya, .ishu, .sorna{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: small;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .footer{
